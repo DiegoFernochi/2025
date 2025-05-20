@@ -8,69 +8,186 @@
 /* Corpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e9f7df;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
 /* Cabeçalho */
 header {
     background-color: #4caf50;
     color: white;
-    padding: 20px;
+    padding: 50px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2rem;
 }
 
-/* Conteúdo principal */
-.container {
+/* Seção Introdução */
+.intro {
+    background-color: #e9f7df;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    color: #666;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.quiz {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Seção Perguntas Frequentes */
+.faq {
+    background-color: #f9f9f9;
+    padding: 40px 0;
 }
 
-.quiz h2 {
-    font-size: 1.8rem;
+.faq h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pergunta {
     margin-bottom: 20px;
 }
 
-.question {
-    margin-bottom: 20px;
-}
-
-.question h3 {
-    font-size: 1.4rem;
+.pergunta h3 {
+    font-size: 1.5rem;
     color: #4caf50;
 }
 
-.answer {
-    margin-top: 10px;
-    padding-left: 20px;
-    background-color: #f4f4f4;
-    border-left: 4px solid #4caf50;
-    font-size: 1rem;
+.pergunta p {
+    font-size: 1.1rem;
+    color: #666;
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 5px solid #4caf50;
 }
 
+/* Seção Galeria */
+.galeria {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 30px;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagem {
+    margin: 10px;
+    flex-basis: 22%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Seção Contato */
+.contato {
+    background-color: #e9f7df;
+    padding: 40px 0;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Rodapé */
 footer {
     background-color: #4caf50;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
 }
